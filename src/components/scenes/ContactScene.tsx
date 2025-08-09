@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text, Float, Html } from '@react-three/drei';
+import { Text, Float, Html, OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 export const ContactScene = () => {
@@ -169,6 +169,8 @@ export const ContactScene = () => {
           </mesh>
         </Float>
       </group>
+      
+      <OrbitControls enableZoom={false} enablePan={false} />
     </>
   );
 };

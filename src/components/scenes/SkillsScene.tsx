@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text, Float, Html } from '@react-three/drei';
+import { Text, Float, Html, OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 const skills = [
@@ -110,6 +110,8 @@ export const SkillsScene = () => {
           ))}
         </group>
       </group>
+      
+      <OrbitControls enableZoom={false} enablePan={false} />
     </>
   );
 };

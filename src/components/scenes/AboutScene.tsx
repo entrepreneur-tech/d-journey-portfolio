@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text, Float, Html } from '@react-three/drei';
+import { Text, Float, Html, OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 export const AboutScene = () => {
@@ -89,6 +89,8 @@ export const AboutScene = () => {
           </mesh>
         </Float>
       </group>
+      
+      <OrbitControls enableZoom={false} enablePan={false} />
     </>
   );
 };
